@@ -200,7 +200,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(pictures/IMG_20211126_140811_559.jpg);
+	background-image: url(IMG_20211126_140811_559.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -291,7 +291,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(pictures/photo_2022-04-28_00-10-17.jpg);
+	background-image: url(photo_2022-04-28_00-10-17.jpg);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -699,4 +699,5 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+
 }
