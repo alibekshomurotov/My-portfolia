@@ -1,270 +1,904 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shomurotov Alibek | Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Fayllari -->
+    <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>Sh</span>omurotov <span>A</span>libek</h1>
-          </a>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-logo">
+                <div class="logo-hexagon">
+                    <svg viewBox="0 0 100 100">
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="crimson" />
+                                <stop offset="100%" stop-color="#6366f1" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M50,10 L90,30 L90,70 L50,90 L10,70 L10,30 Z" fill="url(#grad)" />
+                        <text x="50" y="58" text-anchor="middle" fill="white" font-size="24" font-weight="bold">A</text>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Alibek<span class="dot">.</span></h1>
+                    <p>Portfolio Loading...</p>
+                </div>
+            </div>
+            
+            <div class="loading-content">
+                <div class="loading-progress">
+                    <div class="progress-text">
+                        <span class="progress-percent">0%</span>
+                        <span class="progress-status">Initializing...</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                        <div class="progress-steps">
+                            <div class="step active"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="loading-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-target="85">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Success</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loading-quote">
+                <i class="fas fa-quote-left"></i>
+                <p>"The best way to predict the future is to create it."</p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            
+            <div class="loading-tips">
+                <div class="tip">Tip: Press Space to skip loading</div>
+            </div>
         </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- End Header -->
 
+    <!-- Main Content -->
+    <div id="main-content" class="main-content">
+        <!-- Header Section -->
+        <section id="header">
+            <div class="header container">
+                <div class="nav-bar">
+                    <div class="brand">
+                        <a href="#hero">
+                            <h1><span>Sh</span>omurotov <span>A</span>libek</h1>
+                        </a>
+                    </div>
+                    <div class="nav-list">
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#hero" data-after="Home">Home</a></li>
+                            <li><a href="#services" data-after="Service">Services</a></li>
+                            <li><a href="#projects" data-after="Projects">Projects</a></li>
+                            <li><a href="#about" data-after="About">About</a></li>
+                            <li><a href="#contact" data-after="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Alibek <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero container">
+                <div>
+                    <h1>Hello, <span></span></h1>
+                    <h1>My Name is <span></span></h1>
+                    <h1>Alibek <span></span></h1>
+                    <a href="#projects" type="button" class="cta">Portfolio</a>
+                </div>
+            </div>
+        </section>
 
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Men sizga mening xayotimda yaratagan va organgan foydali narsalarimni haqidsa bilib olasiz.Umid qilamanki siz bulardan foyda olasizmi va o'zingizni xayotingizda kerak boladi.</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Web Design</h2>
-          <p>Biz zamonaviy va mobilga mos veb-sayt dizaynlarini yaratamiz. Dizaynlarimiz foydalanuvchi uchun qulay va vizual jihatdan jozibador bo‘ladi.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>FRONT-END DEVELOPMENT</h2>
-          <p>Saytingizni tez, interaktiv va barcha qurilmalarga mos holda yaratamiz. Foydalanuvchiga qulaylik — biz uchun ustuvor.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>GRAPHIC DESIGN</h2>
-          <p>Logotip, banner va boshqa vizual materiallar orqali brendingizni kuchaytiramiz. Kreativ yondashuv bilan ko‘zga tashlanadigan dizaynlar ishlab chiqamiz.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>SEO OPTIMIZATION</h2>
-          <p>Yaxshi sayt hech kim ko‘rmasa – foydasiz. Biz sizning sahifangizni Google va boshqa qidiruv tizimlarida yuqoriga olib chiqamiz, trafikni oshiramiz.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
+        <!-- Service Section -->
+        <section id="services">
+            <div class="services container">
+                <div class="service-top">
+                    <h1 class="section-title">Serv<span>i</span>ces</h1>
+                    <p>Men sizga mening xayotimda yaratgan va organgan foydali narsalarimni haqidsa bilib olasiz.Umid qilamanki siz bulardan foyda olasizmi va o'zingizni xayotingizda kerak boladi.</p>
+                </div>
+                <div class="service-bottom">
+                    <div class="service-item modern-card">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Web Design"></div>
+                        <h2>Web Design</h2>
+                        <p>Biz zamonaviy va mobilga mos veb-sayt dizaynlarini yaratamiz. Dizaynlarimiz foydalanuvchi uchun qulay va vizual jihatdan jozibador bo'ladi.</p>
+                        <div class="service-hover">
+                            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item modern-card">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Frontend Development"></div>
+                        <h2>FRONT-END DEVELOPMENT</h2>
+                        <p>Saytingizni tez, interaktiv va barcha qurilmalarga mos holda yaratamiz. Foydalanuvchiga qulaylik — biz uchun ustuvor.</p>
+                        <div class="service-hover">
+                            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-item modern-card">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Graphic Design"></div>
+                        <h2>GRAPHIC DESIGN</h2>
+                        <p>Logotip, banner va boshqa vizual materiallar orqali brendingizni kuchaytiramiz va yangi loyihalarni qilishda yordam beramiz.</p>
+                        <div class="service-hover">
+                            <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Coding is Love</h2>
-            <p>Shaxsiy portfolio sifatida ishlab chiqilgan ushbu loyiha HTML, CSS va JavaScript asosida qurilgan. Sayt to‘liq responsiv bo‘lib, barcha ekran o‘lchamlariga moslashadi. Dizayn minimalist uslubda tanlangan, foydalanuvchiga qulay interfeys bilan ta'minlangan. Bu loyiha orqali front-end ko‘nikmalarimni amaliyotda sinab ko‘rdim.</p>
-          </div>
-          <div class="project-img">
-            <img src="photo_2022-03-16_13-29-54.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Modern Branding Website</h2>
-            <p>Kichik biznes uchun yaratilgan zamonaviy veb-sayt. Loyiha dizayni mijoz brendiga mos ravishda maxsus ishlangan va rang sxemasi, tipografik uslublar orqali brend identitetini kuchaytiradi. Sahifa tez yuklanadi, SEO tamoyillariga rioya qilinib tuzilgan. Admin panel orqali kontentni boshqarish imkoniyati ham mavjud.</p>
-          </div>
-          <div class="project-img">
-            <img src="photo_2022-03-14_22-21-05.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>E-Commerce UI Prototype</h2>
-            <p>Online do‘kon uchun mo‘ljallangan foydalanuvchi interfeysi dizayni. Loyihada mahsulot kartochkalari, kategoriya filtrlari, xarid qilish savatchasi va to‘lov sahifalari ishlab chiqilgan. Dizayn Figma orqali tuzilgan bo‘lib, keyinchalik React bilan funksional holatga o‘tkazilishi rejalashtirilgan. Har bir element foydalanuvchi qulayligini hisobga olgan holda joylashtirilgan.</p>
-          </div>
-          <div class="project-img">
-            <img src="photo_2022-03-14_16-21-58.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Restaurant website</h2>
-            <p>Men yangi restaran saytini yaratib berganman lekin uni sotmaganman chunki uni yaqin odamimni restarani uchun qilgandim sayt jufa zamonaviy bolgan uni qilishda djangodan foydalanaganman.</p>
-          </div>
-          <div class="project-img">
-            <img src="photo_2022-03-14_16-19-17.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Clean Blog Platform</h2>
-            <p>Yozuvchi va bloggerlar uchun yaratilgan toza va e’tibor chalg‘itmaydigan blog platforma. Loyiha foydalanuvchilarga maqola yozish, tahrirlash, ko‘rish va izoh qoldirish imkonini beradi. Interfeys soddaligi bilan ajralib turadi, lekin funksional jihatdan boy. Bu loyiha orqali content management tizimlari bilan ishlash tajribamni oshirdim.</p>
-          </div>
-          <div class="project-img">
-            <img src="photo_2022-03-12_23-35-49.jpg" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="projects container">
+                <div class="projects-header">
+                    <h1 class="section-title">Recent <span>Projects</span></h1>
+                </div>
+                <div class="all-projects">
+                    <div class="project-item modern-project">
+                        <div class="project-info">
+                            <h1>Project 1</h1>
+                            <h2>Coding is Love</h2>
+                            <p>Shaxsiy portfolio sifatida ishlab chiqilgan ushbu loyiha HTML, CSS va JavaScript asosida qurilgan. Sayt to'liq responsiv bo'lib, barcha ekran o'lchamlariga moslashadi. Dizayn minimalist uslubda tanlangan, foydalanuvchiga qulay interfeys bilan ta'minlangan.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-img">
+                            <img src="pictures/photo_2022-03-16_13-29-54.jpg" alt="Project 1">
+                            <div class="project-overlay">
+                                <a href="http://mykundalik.netlify.app/" class="view-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item modern-project">
+                        <div class="project-info">
+                            <h1>Project 2</h1>
+                            <h2>Modern Branding Website</h2>
+                            <p>Kichik biznes uchun yaratilgan zamonaviy veb-sayt. Loyiha dizayni mijoz brendiga mos ravishda maxsus ishlangan va rang sxemasi, tipografik uslublar orqali brend identitetini kuchaytiradi. Sahifa tez yuklanadi, SEO tamoyillariga rioya qilinib tuzilgan.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Tailwind</span>
+                                <span>Framer</span>
+                            </div>
+                        </div>
+                        <div class="project-img">
+                            <img src="pictures/photo_2022-03-14_22-21-05.jpg" alt="Project 2">
+                            <div class="project-overlay">
+                                <a href="#" class="view-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item modern-project">
+                        <div class="project-info">
+                            <h1>Project 3</h1>
+                            <h2>E-Commerce UI Prototype</h2>
+                            <p>Online do'kon uchun mo'ljallangan foydalanuvchi interfeysi dizayni. Loyihada mahsulot kartochkalari, kategoriya filtrlari, xarid qilish savatchasi va to'lov sahifalari ishlab chiqilgan.</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-img">
+                            <img src="pictures/photo_2022-03-14_16-21-58.jpg" alt="Project 3">
+                            <div class="project-overlay">
+                                <a href="#" class="view-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item modern-project">
+                        <div class="project-info">
+                            <h1>Project 4</h1>
+                            <h2>Restaurant website</h2>
+                            <p>Men yangi restaran saytini yaratib berganman lekin uni sotmaganman chunki uni yaqin odamimni restarani uchun qilgandim sayt jufa zamonaviy bolgan uni qilishda djangodan foydalanaganman.</p>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="project-img">
+                            <img src="pictures/photo_2022-03-14_16-19-17.jpg" alt="Project 4">
+                            <div class="project-overlay">
+                                <a href="#" class="view-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item modern-project">
+                        <div class="project-info">
+                            <h1>Project 5</h1>
+                            <h2>Clean Blog Platform</h2>
+                            <p>Yozuvchi va bloggerlar uchun yaratilgan toza va e'tibor chalg'itmaydigan blog platforma. Loyiha foydalanuvchilarga maqola yozish, tahrirlash, ko'rish va izoh qoldirish imkonini beradi.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-img">
+                            <img src="pictures/photo_2022-03-12_23-35-49.jpg" alt="Project 5">
+                            <div class="project-overlay">
+                                <a href="#" class="view-btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="IMG_20220206_174325_216.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End and Bacgkend Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
-          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
-          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
-          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
-          reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+        <!-- About Section -->
+        <section id="about">
+            <div class="about container">
+                <div class="col-left">
+                    <div class="about-img">
+                        <img src="pictures/IMG_20220206_174325_216.jpg" alt="Alibek Shomurotov">
+                    </div>
+                </div>
+                <div class="col-right">
+                    <h1 class="section-title">About <span>me</span></h1>
+                    <h2>Front End and Backend Developer</h2>
+                    <p>I am a passionate full-stack developer with expertise in creating modern, responsive web applications. With 3+ years of experience, I specialize in turning complex problems into simple, beautiful designs. My approach combines technical expertise with creative thinking to deliver solutions that not only look great but also perform exceptionally well.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                    <a href="#" class="cta"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+998 33 955 1632</h2>
-            <h2>+1 234 123 1234</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>KXiva, Xorazm, Uzbekistan</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact container">
+                <div>
+                    <h1 class="section-title">Contact <span>info</span></h1>
+                </div>
+                <div class="contact-items modern-contact">
+                    <div class="contact-item modern-card">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="Phone"></div>
+                        <div class="contact-info">
+                            <h1>Phone</h1>
+                            <h2>+998 33 955 1632</h2>
+                            <h2>+1 234 123 1234</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item modern-card">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" alt="Email"></div>
+                        <div class="contact-info">
+                            <h1>Email</h1>
+                            <h2>info@gmail.com</h2>
+                            <h2>abcd@gmail.com</h2>
+                        </div>
+                    </div>
+                    <div class="contact-item modern-card">
+                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="Address"></div>
+                        <div class="contact-info">
+                            <h1>Address</h1>
+                            <h2>Khiva, Xorazm, Uzbekistan</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="form-title">Send me a message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
+        <!-- Footer -->
+<!-- Footer -->
+<section id="footer">
+  <div class="footer container">
       <div class="brand">
-        <h1><span>Sh</span>murotov <span>A</span>libek</h1>
+          <h1><span>Sh</span>omurotov <span>A</span>libek</h1>
       </div>
       <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/shomurotov_1632/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://t.me/shomurotov_alibek_10"><img src="data:image/jpeg;base64,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" ></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
-        </div>
+      
+      <div class="social-section">
+          <h3 class="social-title">Connect With Me</h3>
+          <div class="social-icon">
+              
+              <!-- Instagram -->
+              <div class="social-item">
+                  <div class="social-icon-wrapper" data-platform="instagram">
+                      <div class="social-icon-circle">
+                          <img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" alt="Instagram" class="social-icon-img">
+                      </div>
+                      <div class="social-icon-content">
+                          <div class="social-name">Instagram</div>
+                          <div class="social-handle">@shomurotov_1632</div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Telegram -->
+              <div class="social-item">
+                  <div class="social-icon-wrapper" data-platform="telegram">
+                      <div class="social-icon-circle">
+                          <img src="https://camo.githubusercontent.com/2f2b0c82cb9dc05f15a7b3724637a4862a98f06ad90260c6577fa873571475e6/68747470733a2f2f646f776e6c6f61642e6c6f676f2e77696e652f6c6f676f2f54656c656772616d5f28736f667477617265292f54656c656772616d5f28736f667477617265292d4c6f676f2e77696e652e706e67" alt="Telegram" class="social-icon-img">
+                      </div>
+                      <div class="social-icon-content">
+                          <div class="social-name">Telegram</div>
+                          <div class="social-handle">@shomurotov_alibek_10</div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- YouTube -->
+              <div class="social-item">
+                  <div class="social-icon-wrapper" data-platform="youtube">
+                      <div class="social-icon-circle">
+                          <img src="https://img.icons8.com/bubbles/100/000000/youtube.png" alt="YouTube" class="social-icon-img">
+                      </div>
+                      <div class="social-icon-content">
+                          <div class="social-name">YouTube</div>
+                          <div class="social-handle">@AlibekDev</div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- GitHub (qo'shimcha) -->
+              <div class="social-item">
+                  <div class="social-icon-wrapper" data-platform="github">
+                      <div class="social-icon-circle">
+                          <img src="https://img.icons8.com/bubbles/100/000000/github.png" alt="GitHub" class="social-icon-img">
+                      </div>
+                      <div class="social-icon-content">
+                          <div class="social-name">GitHub</div>
+                          <div class="social-handle">@alibekdev</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <p>Copyright © 2020 Arfan. All rights reserved</p>
+      
+      <p>Copyright © 2023 Alibek. All rights reserved</p>
+  </div>
+</section>
+        
+        <!-- Dark Mode Toggle -->
+        <div class="dark-mode-toggle">
+            <button class="dark-mode-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-const navList = document.querySelector('.nav-list ul');
 
-hamburger.addEventListener('click', () => {
-	hamburger.classList.toggle('active');
-	navList.classList.toggle('active');
+    <!-- JavaScript Fayllari -->
+    <script>
+      // Main Portfolio Script
+// Social Icons Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const socialWrappers = document.querySelectorAll('.social-icon-wrapper');
+    
+    // Hover effekti uchun
+    socialWrappers.forEach(wrapper => {
+        const platform = wrapper.getAttribute('data-platform');
+        
+        // Hover effekti
+        wrapper.addEventListener('mouseenter', () => {
+            // Har bir platforma uchun maxsus sound effect qo'shish
+            playSocialHoverSound(platform);
+            
+            // Add bounce animation
+            wrapper.style.animation = 'none';
+            setTimeout(() => {
+                wrapper.style.animation = 'socialBounce 0.5s ease';
+            }, 10);
+        });
+        
+        // Click event for mobile
+        wrapper.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                
+                // Toggle active state
+                socialWrappers.forEach(other => {
+                    if (other !== wrapper) {
+                        other.classList.remove('active');
+                    }
+                });
+                
+                wrapper.classList.toggle('active');
+            }
+        });
+    });
+    
+    // Sound effect function
+    function playSocialHoverSound(platform) {
+        // Bu yerda audio fayllarni qo'shishingiz mumkin
+        const sounds = {
+            facebook: 'sound1',
+            instagram: 'sound2',
+            telegram: 'sound3',
+            youtube: 'sound4',
+            github: 'sound5'
+        };
+        
+        // Audio o'ynatish (agar sound fayllar bo'lsa)
+        // const audio = new Audio(`sounds/${sounds[platform]}.mp3`);
+        // audio.volume = 0.1;
+        // audio.play().catch(e => console.log('Audio play error:', e));
+    }
+    
+    // Add CSS animation for bounce
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes socialBounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        /* Mobile active state */
+        @media only screen and (max-width: 768px) {
+            #footer .social-icon-wrapper.active .social-icon-content {
+                opacity: 1 !important;
+                transform: translateX(0) !important;
+            }
+            
+            #footer .social-icon-wrapper.active {
+                transform: translateY(-10px) !important;
+            }
+        }
+        
+        /* Loading animation for social icons */
+        @keyframes socialAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        #footer .social-item {
+            animation: socialAppear 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            opacity: 0;
+        }
+        
+        /* Stagger animation delays */
+        #footer .social-item:nth-child(1) { animation-delay: 0.1s; }
+        #footer .social-item:nth-child(2) { animation-delay: 0.2s; }
+        #footer .social-item:nth-child(3) { animation-delay: 0.3s; }
+        #footer .social-item:nth-child(4) { animation-delay: 0.4s; }
+        #footer .social-item:nth-child(5) { animation-delay: 0.5s; }
+    `;
+    document.head.appendChild(style);
+    
+    // Social iconlarga link qo'shish
+    const socialLinks = {
+        facebook: 'https://facebook.com/alibekdev',
+        instagram: 'https://instagram.com/shomurotov_1632',
+        telegram: 'https://t.me/shomurotov_alibek_10',
+        youtube: 'https://youtube.com/@AlibekDev',
+        github: 'https://github.com/alibekdev'
+    };
+    
+    // Har bir social iconni linkka aylantirish
+    socialWrappers.forEach(wrapper => {
+        const platform = wrapper.getAttribute('data-platform');
+        wrapper.addEventListener('click', (e) => {
+            if (!wrapper.classList.contains('active')) {
+                window.open(socialLinks[platform], '_blank');
+            }
+        });
+    });
 });
 
-/* Close mobile nav when link clicked */
-document.querySelectorAll('.nav-list a').forEach(link => {
-	link.addEventListener('click', () => {
-		hamburger.classList.remove('active');
-		navList.classList.remove('active');
-	});
-});
+// ... qolgan JavaScript kodlari ...
+    
+    // Header background on scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            // header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+        } else {
+            // header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+        }
+        
+        if (window.innerWidth <= 768) {
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                // header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            }
+        }
+    });
+    
+    // Dark Mode Toggle
+    const darkModeToggle = document.querySelector('.dark-mode-btn');
+    const darkModeIcon = document.querySelector('.dark-mode-btn i');
+    
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeIcon.className = 'fas fa-sun';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            darkModeIcon.className = 'fas fa-moon';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        darkModeIcon.className = 'fas fa-sun';
+    }
+    
+    // Service Items Hover Effects
+    const serviceItems = document.querySelectorAll('.service-item');
+    serviceItems.forEach((item, index) => {
+        item.addEventListener('mouseenter', () => {
+            item.style.transform = 'translateY(-10px)';
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            item.style.transform = 'translateY(0)';
+        });
+        
+        // Add animation delay
+        item.style.animationDelay = `${index * 0.1}s`;
+    });
+    
+    // Project Items Hover Effects
+    const projectItems = document.querySelectorAll('.modern-project');
+    projectItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.2}s`;
+        
+        item.addEventListener('mouseenter', () => {
+            const img = item.querySelector('.project-img img');
+            if (img) {
+                img.style.transform = 'scale(1.1)';
+            }
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            const img = item.querySelector('.project-img img');
+            if (img) {
+                img.style.transform = 'scale(1)';
+            }
+        });
+    });
+    
+    // Contact Form Submission
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            alert('Thank you for your message! I will get back to you soon.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+    }
+    
+    // Add animation to elements on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    
 
-/* Smooth scroll for anchor links */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-	anchor.addEventListener('click', function (e) {
-		e.preventDefault();
-		const target = document.querySelector(this.getAttribute('href'));
-		if (target) {
-			target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		}
-	});
+// Loading Screen Script
+class LoadingScreen {
+    constructor() {
+        this.loadingScreen = document.getElementById('loading-screen');
+        this.progressFill = document.querySelector('.progress-fill');
+        this.progressPercent = document.querySelector('.progress-percent');
+        this.progressStatus = document.querySelector('.progress-status');
+        this.progressSteps = document.querySelectorAll('.step');
+        this.statNumbers = document.querySelectorAll('.stat-number');
+        this.isLoading = true;
+        this.currentProgress = 0;
+        this.totalSteps = 5;
+        this.currentStep = 0;
+        
+        this.init();
+    }
+    
+    init() {
+        this.bindEvents();
+        this.startLoading();
+    }
+    
+    bindEvents() {
+        // Skip loading with Space key
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space' && this.isLoading) {
+                e.preventDefault();
+                this.skipLoading();
+            }
+        });
+        
+        // Skip loading with click on tip
+        const tip = document.querySelector('.tip');
+        if (tip) {
+            tip.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.skipLoading();
+            });
+        }
+        
+        // Skip loading with double click anywhere
+        let clickCount = 0;
+        let clickTimer;
+        this.loadingScreen.addEventListener('click', (e) => {
+            clickCount++;
+            if (clickCount === 1) {
+                clickTimer = setTimeout(() => {
+                    clickCount = 0;
+                }, 300);
+            } else if (clickCount === 2) {
+                clearTimeout(clickTimer);
+                clickCount = 0;
+                this.skipLoading();
+            }
+        });
+    }
+    
+    startLoading() {
+        const loadingStates = [
+            { percent: 5, status: "Initializing..." },
+            { percent: 10, status: "Loading Assets..." },
+            { percent: 25, status: "Processing Data..." },
+            { percent: 50, status: "Building Interface..." },
+            { percent: 75, status: "Finalizing..." },
+            { percent: 100, status: "Ready!" }
+        ];
+        
+        let stepIndex = 0;
+        const simulateLoading = () => {
+            if (stepIndex < loadingStates.length) {
+                const state = loadingStates[stepIndex];
+                this.updateProgress(state.percent, state.status);
+                
+                if (stepIndex > 0 && stepIndex <= this.totalSteps) {
+                    this.progressSteps[stepIndex - 1].classList.add('active');
+                }
+                
+                stepIndex++;
+                
+                if (state.percent === 100) {
+                    setTimeout(() => this.completeLoading(), 1000);
+                } else {
+                    // Random delay to simulate real loading
+                    const delay = Math.random() * 300 + 200;
+                    setTimeout(simulateLoading, delay);
+                }
+            }
+        };
+        
+        simulateLoading();
+        this.animateStats();
+    }
+    
+    updateProgress(percent, status) {
+        this.currentProgress = percent;
+        this.progressFill.style.width = percent + '%';
+        this.progressPercent.textContent = percent + '%';
+        this.progressStatus.textContent = status;
+    }
+    
+    animateStats() {
+        this.statNumbers.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-target'));
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+            
+            const updateStat = () => {
+                current += increment;
+                if (current < target) {
+                    stat.textContent = Math.floor(current);
+                    requestAnimationFrame(updateStat);
+                } else {
+                    stat.textContent = target + (target >= 100 ? '+' : '+');
+                }
+            };
+            
+            setTimeout(updateStat, 500);
+        });
+    }
+    
+    completeLoading() {
+        this.isLoading = false;
+        
+        // Add confetti effect
+        this.triggerConfetti();
+        
+        // Hide loading screen with animation
+        setTimeout(() => {
+            this.loadingScreen.classList.add('hidden');
+            
+            // Remove loading screen from DOM after animation
+            setTimeout(() => {
+                this.loadingScreen.style.display = 'none';
+                
+                // Add loaded class to body
+                document.body.classList.add('loaded');
+                
+                // Trigger main content animations
+                this.triggerContentAnimations();
+            }, 1000);
+        }, 500);
+    }
+    
+    skipLoading() {
+        if (!this.isLoading) return;
+        
+        this.updateProgress(100, "Skipping...");
+        setTimeout(() => this.completeLoading(), 300);
+    }
+    
+    triggerConfetti() {
+        const colors = ['#dc143c', '#6366f1', '#10b981', '#f59e0b', '#8b5cf6'];
+        
+        for (let i = 0; i < 50; i++) {
+            const confetti = document.createElement('div');
+            confetti.style.position = 'fixed';
+            confetti.style.width = '10px';
+            confetti.style.height = '10px';
+            confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.borderRadius = '50%';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.top = '-20px';
+            confetti.style.zIndex = '9998';
+            confetti.style.opacity = '0.8';
+            confetti.style.pointerEvents = 'none';
+            
+            document.body.appendChild(confetti);
+            
+            // Animation
+            const animation = confetti.animate([
+                { 
+                    transform: 'translateY(0) rotate(0deg)', 
+                    opacity: 1 
+                },
+                { 
+                    transform: `translateY(${window.innerHeight + 100}px) rotate(${Math.random() * 360}deg)`, 
+                    opacity: 0 
+                }
+            ], {
+                duration: Math.random() * 2000 + 1000,
+                easing: 'cubic-bezier(0.215, 0.610, 0.355, 1)'
+            });
+            
+            animation.onfinish = () => confetti.remove();
+        }
+    }
+    
+    triggerContentAnimations() {
+        // Add animations to main content sections
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section, index) => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            
+            setTimeout(() => {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            }, index * 200 + 300);
+        });
+        
+        // Add animation to hero section
+        const hero = document.querySelector('#hero');
+        if (hero) {
+            hero.style.animation = 'none';
+            setTimeout(() => {
+                hero.style.animation = 'fadeIn 1s ease forwards';
+            }, 100);
+        }
+    }
+}
+
+// Initialize loading screen when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    const loadingScreen = new LoadingScreen();
+    
+    // Add CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .loaded #hero h1 {
+            animation-duration: 0.8s;
+        }
+        
+        .loaded .section-title {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .loaded .modern-card {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .loaded .modern-project {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    `;
+    document.head.appendChild(style);
 });
-	  
-/* Header background on scroll */
-window.addEventListener('scroll', () => {
-	const header = document.querySelector('#header .header');
-	if (window.scrollY > 50) {
-		header.style.backgroundColor = 'rgba(31, 30, 30, 0.9)';
-	} else {
-		header.style.backgroundColor = 'rgba(31, 30, 30, 0.24)';
-	}
-});
-  </script>
+    </script>
 </body>
-
-
 </html>
