@@ -303,7 +303,7 @@ body.dark-mode #header .nav-list ul {
 
 /* Hero Section */
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(pictures/IMG_20211126_140811_559.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(IMG_20211126_140811_559.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1644,3 +1644,4 @@ body.dark-mode .form-group textarea:focus {
         right: 20px;
     }
 }
+
